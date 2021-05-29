@@ -38,15 +38,86 @@ p{
 /* ==========================================================
 NavBar 
 ========================================================== */
-.header{
-	max-width: 100%;
-	height: 600px;
-	background: url(./img/desk.jpg);
-	background-size: cover;
+.nav{
+	height: 41px;
+	width: 100%;
+	background-color: blueviolet;
+	position: relative;
+}
+.NavBar{
+	display: flex;
+	padding: 10px 0;
+} 
+.left__nav{
+	left: 0;
+	width: 30%;
+	color: white;
+
+}
+.nav__manu{
+	right: 0;
+	width: 70%;
 }
 
-.nav{
-	width: 100%;
-	height: 54px;
-	background-color: #091430;
+.nav__manu ul{
+	list-style: none;
+	text-align: right;
+}
+.nav__manu ul li{
+	display: inline-block;
+	margin-right: 10px;
+	position: relative;
+}
+
+.nav__manu ul li ::after{
+	bottom: 6px;
+	right: -12px;
+	content: "";
+	width: 1px;
+	height: 13px;
+	background-color: #fff;
+	position: absolute;
+}
+.nav__manu ul li:last-child ::after{
+	display: none;
+}
+
+.nav__manu ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav__manu ul li a:hover{
+	color: #ddd;
+}
+/* ======================================================== */
+/* Side Bar */
+/* ======================================================== */
+.side__bar{
+	width: 250px;
+	height: 100%;
+	background-color: blueviolet;
+	left: 0;
+	top: 51px;
+}
+.content p{
+	color: white;
+}
+.img img{
+	margin: 10px 0;
+}
+button{
+	width: 50%;
+	height: 40px;
+	border: none;
+	padding: 10px;
+	color: #fff;
+	font-size: 15px;
+	background-color: violet;
+	border-radius: 10%;
+	cursor: pointer;
+}
+button:hover{
+	color: violet;
+	background-color: #fff;
 }
