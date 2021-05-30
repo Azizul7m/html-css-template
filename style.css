@@ -99,27 +99,37 @@ NavBar
 /* Side Bar */
 /* ======================================================== */
 .side__bar{
+	padding-top: 30px;
 	width: 250px;
 	height: 100%;
-	background-color: blueviolet;
+	background-color: #2f323a;
 	left: 0;
-	top: 51px;
+	position:fixed;
 }
-.content p{
-	color: white;
-}
-button{
-	width: 50%;
-	height: 40px;
-	border: none;
-	padding: 10px;
+.side__bar .profile__img{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin-bottom: 10px;
+} 
+.side__bar h4{
 	color: #fff;
-	font-size: 15px;
-	background-color: violet;
-	border-radius: 10%;
-	cursor: pointer;
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
-button:hover{
-	color: violet;
-	background-color: #fff;
+.side__bar a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding-left: 40px;
+	line-height: 40px;
+	box-sizing: border-box;
+	transition: .3s;
+	transition-property: background;
+}
+.side__bar a:hover{
+	background: #013E8F;
+}
+.side__bar span{
+	padding-left: 10px;
 }
