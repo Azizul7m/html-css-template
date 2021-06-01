@@ -7,10 +7,13 @@
 		<link href="style.css" rel="stylesheet" />
 	</head>
 	<body>
+		<input type="checkbox" id="check" />
 		<header class="header">
 			<div class="nav">
 				<div class="NavBar containar">
-					<div class="left__nav">Brand</div>
+					<div class="left__nav">
+						Brand<label for="check">&#9776;</label>
+					</div>
 					<div class="nav__manu">
 						<ul>
 							<li><a href="index.html">Home</a></li>
@@ -22,18 +25,21 @@
 				</div>
 			</div>
 		</header>
-		<section>
-			<div class="side__bar">
-				<center>
-					<img src="./img/watch.jpg" class="profile__img" alt="img"/>
-					<h4>Jessica</h4>
-				</center>
-				<a href="#">D<span>Dashboard</span></a>
-				<a href="#">S<span>Setting</span></a>
-				<a href="#">I<span>Info</span></a>
-				<a href="#">A<span>About</span></a>
-				<a href="#">C<span>Conponents</span></a>
-			</div>
-		</section>
+
+		<div class="side__bar">
+			<center>
+				<img src="./img/12.jpg" alt="img" id="img__id" />
+				<div class="left__side"><a href="#">Tasmin Akter</a></div>
+			</center>
+			<ul>
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Info</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Lock</a></li>
+			</ul>
+		</div>
+
+		<div id="btn"><button>SUBMIT</button></div>
 	</body>
 </html>
