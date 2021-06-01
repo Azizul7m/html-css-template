@@ -26,20 +26,88 @@
 			</div>
 		</header>
 
-		<div class="side__bar">
-			<center>
-				<img src="./img/12.jpg" alt="img" id="img__id" />
-				<div class="left__side"><a href="#">Tasmin Akter</a></div>
-			</center>
-			<ul>
-				<li><a href="#">Dashboard</a></li>
-				<li><a href="#">Profile</a></li>
-				<li><a href="#">Info</a></li>
-				<li><a href="#">Settings</a></li>
-				<li><a href="#">Lock</a></li>
-			</ul>
-		</div>
-
-		<div id="btn"><button>SUBMIT</button></div>
+		<section class="from">
+			<div class="from__containar">
+			<div class="title">Registrations</div>
+				<form class="main__from" action="#">
+					<div class="user_details">
+						<div class="input_box">
+							<span class="details">Full Name</span>
+							<input
+								type="text"
+								value=""
+								name=""
+								id="fullname"
+								placeholder="Enter your name"
+								required
+							/>
+						</div>
+						<div class="input_box">
+							<span class="details">Username</span>
+							<input
+								type="text"
+								value=""
+								name=""
+								id="username"
+								placeholder="Enter your username"
+								required
+							/>
+						</div>
+						<div class="input_box">
+							<span class="details">Email</span>
+							<input
+								type="email"
+								value=""
+								name=""
+								id="email"
+								placeholder="Enter your email"
+								required
+							/>
+						</div>
+						<div class="input_box">
+							<span class="details">Phone</span>
+							<input
+								type="text"
+								value=""
+								name=""
+								id="phone"
+								placeholder="Enter your phone"
+								required
+							/>
+						</div>
+						<div class="input_box">
+							<span class="details">Password</span>
+							<input
+								type="password"
+								value=""
+								name=""
+								id="password"
+								placeholder="Enter your password"
+								required
+							/>
+						</div>
+						<div class="input_box">
+							<span class="details">Confirm password</span>
+							<input
+								type="password"
+								value=""
+								name=""
+								id="cpassword"
+								placeholder="Confirm your password"
+								required
+							/>
+						</div>
+						<label for="gender"> Select you gender</label>
+						<select name="gender" id="gender" required>
+							<option value="none" selected>Gender</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">other</option>
+						</select>
+					</div>
+					<button type="submit">SUBMIT</button>
+				</form>
+			</div>
+		</section>
 	</body>
 </html>

@@ -12,6 +12,7 @@ body {
 	font-size: 16px;
 	line-height: 1.5em;
 	font-family: fira code;
+	background: linear-gradient(135deg, #71b7e6, #9b49b6);
 }
 img {
 	max-width: 100%;
@@ -45,6 +46,7 @@ NavBar
 	background-color: blueviolet;
 	color: white;
 	padding: 15px 0px;
+	position: fixed;
 }
 
 .NavBar {
@@ -73,7 +75,11 @@ NavBar
 	text-decoration: none;
 	color: white;
 }
-
+.left__nav label {
+	padding-left: 15px;
+	font-size: 20px;
+	cursor: pointer;
+}
 .nav__manu ul li::after {
 	width: 1px;
 	height: 12px;
@@ -91,68 +97,57 @@ NavBar
 .nav__manu ul li a:hover {
 	color: #ddd;
 }
-
-/* ======================================================== */
-/* Side Bar */
-/* ======================================================== */
-
-.side__bar {
-	width: 250px;
-	height: 100%;
-	background: gray;
-	position: fixed;
-	transition: all 0.3x;
-}
-.side__bar img {
-	width: 100px;
-	height: 100px;
-	border-radius: 100px;
-}
-.side__bar a {
-	text-decoration: none;
-	color: #fff;
-}
-
-.side__bar ul li {
-	line-height: 50px;
-}
-.side__bar ul li:hover {
-	background: blueviolet;
-}
-
-/*--------------------- Side end------------------------*/
-
 #check {
-	outline: red;
 	display: none;
 }
 
-input:checked + .nav {
-	background-color: #2f323a;
+/* ======================================================== */
+/* From  */
+/* ======================================================== */
+.from {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
 }
-
-#btn {
-	margin: 50% 50%;
+.from__containar {
+	max-width: 700px;
+	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	padding: 25px 30px;
 }
-
-#check:checked ~ #btn button {
-	padding: 10px;
-	background-color: black;
-	color: wheat;
-	border-radius: 10px;
-	display: block;
-	cursor: pointer;
-	border: none;
+.from__containar .title {
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	padding: 10px 0;
 }
-#check:checked ~ .side__bar {
-	background: black;
-	left: -190px;
-}
-#check:checked ~ .side__bar ul li a {
-	color: #fff;
-}
-#check:checked ~ .side__bar img{
+.from__containar .title::before {
+	content: " ";
+	height: 3px;
 	width: 50px;
-	height: 50px;
-
+	background: linear-gradient(135deg, #71b7e6, #9b49b6);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-radius: 5px;
+}
+.main__from .user_details {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.user_details .input_box {
+	width: calc(100% / 2 - 20px);
+	margin: 15px 0 12px 0;
+}
+.input_box input {
+	height: 45px;
+	width: 100%;
+}
+.input_box span {
+	font-weight: 500;
+	margin-bottom: 45px;
 }
